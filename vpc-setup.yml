@@ -63,7 +63,7 @@
         region: "{{ region }}"
         az: "{{ zone1 }}"
         state: "{{ state }}"
-        cidr: "{{ PrivSub1Cidr }}"
+        cidr: "{{ PriSub1Cidr }}"
         map_public: yes
         resource_tags:
           Name: vprofile-privsub1
@@ -75,7 +75,7 @@
         region: "{{ region }}"
         az: "{{ zone1 }}"
         state: "{{ state }}"
-        cidr: "{{ PrivSub2Cidr }}"
+        cidr: "{{ PriSub2Cidr }}"
         map_public: yes
         resource_tags:
           Name: vprofile-privsub2
@@ -87,7 +87,7 @@
         region: "{{ region }}"
         az: "{{ zone1 }}"
         state: "{{ state }}"
-        cidr: "{{ PrivSub3Cidr }}"
+        cidr: "{{ PriSub3Cidr }}"
         map_public: yes
         resource_tags:
           Name: vprofile-privsub3
