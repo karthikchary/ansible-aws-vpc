@@ -116,3 +116,12 @@
           - dest: 0.0.0.0/0
             gateway_id: "{{ igw_out.gateway_id }}"
       register: pubRt_out
+    
+    - name: Create a new nat gateway and allocate new EIP if a nat gateway does not yet exist in the environment
+      ec2_vpc_nat_gateway:
+        state: "{{ state }}"
+        subnet_id: "{{ pubsub1_out.subnet_id}}"
+        wait: yes
+        region: "{{ region }}"
+        if_exist_do_not_create: true
+      register: NATGW_out
