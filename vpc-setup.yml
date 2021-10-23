@@ -143,7 +143,7 @@
 
     - debug: 
         var: "{{item}}"
-      loop: 
+        loop: 
         - vpcout.vpc.id
         - pubsub1_out.subnet.id
         - pubsub2_out.subnet.id
@@ -155,7 +155,7 @@
         - pubRt_out.route_table.id
         - NATGW_out.nat_gateway_id
         - privRT_out.route_table.id
-        
+
     - set_fact:
       vpc_id: "{{ vpcout.vpc.id }}"
       pubsub1_id: "{{ pubsub1_out.subnet.id }}"
