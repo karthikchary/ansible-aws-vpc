@@ -56,3 +56,5 @@
         Name: "Bastion_host"
         Project: Orange
         Owner: Devops Team
+      group_id: "{{ BastionSG_out.group_id }}"
+    register: bastionHost_out
